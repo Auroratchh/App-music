@@ -1,0 +1,46 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #000;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.albums-section {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.playlist-sidebar {
+  width: 350px;
+  background-color: #1a1a1a;
+  overflow-y: auto;
+}
+
+.player-footer {
+  background-color: #181818;
+  border-top: 1px solid #282828;
+}

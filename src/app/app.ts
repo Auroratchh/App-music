@@ -1,12 +1,21 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { SearchBarComponent } from './shared/components/search-bar/search-bar';
+import { AlbumCardComponent } from './features/album-card/album-card';
+import { PlaylistComponent } from './features/playlist/playlist';
+import { PlayerComponent } from './features/player/player';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [
+    SearchBarComponent,
+    AlbumCardComponent,
+    PlaylistComponent,
+    PlayerComponent
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('spotify-app');
+export class AppComponent {
+  title = 'spotify-app';
 }

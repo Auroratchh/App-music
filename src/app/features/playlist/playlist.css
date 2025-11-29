@@ -1,0 +1,56 @@
+.playlist-container {
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.playlist-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.track-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.track-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  background-color: #282828;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.track-item:hover {
+  background-color: #3e3e3e;
+}
+
+.track-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.track-info {
+  flex: 1;
+}
+
+.track-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.track-artist {
+  font-size: 12px;
+  color: #b3b3b3;
+}
